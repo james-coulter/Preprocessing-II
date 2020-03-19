@@ -1,4 +1,16 @@
+body {
+  @media @mobile {
+    margin: 5%;
+  }
+}
+
 .home {
+
+  .headerText{
+    margin: 3% 0;
+    padding-bottom: 1%;
+    border-bottom: 2px dashed lightgray;
+  }
 
   .content-section {
     margin: 30px 0;
@@ -21,6 +33,14 @@
         border-radius: 10px;
       }
     }
+    @media @mobile {
+      flex-direction: column;
+      
+      .text-content, .img-content {
+        width: 100%;
+      }
+    }
+
   }
 
   .inverse-content {
@@ -36,6 +56,14 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile {
+      flex-direction: column-reverse;
+      
+      .text-content, .img-content {
+        width: 100%;
+      }
+    }
   }
 
   .content-destination {
@@ -44,6 +72,10 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile {
+      width: 100%;
     }
   }
 
@@ -56,6 +88,96 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+    .btn {
+      .custombtn(white,#4682B4);
+
+      &:hover {
+        .coolanimation();
+      }
+
+      @media @mobile {
+        width: 100%;
+        
+      }
+    } 
+    
+    @media @mobile {
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
     }
+    }
+    @media @mobile {
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: 4%;
+    }
+    }
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #4682B4;
+  border-radius: 8px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: #4682B4;
+  font-size: 1.5rem;
+
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+  input[type=submit] {
+  .custombtn(white, #4682B4);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 12px 20px;
+
+  &:hover {
+    .coolanimation();
   }
-}// home
+}
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    
+  }
+} 
+  }// home

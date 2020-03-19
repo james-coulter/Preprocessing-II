@@ -15,10 +15,26 @@
 </head>
 
 <body>
-
-  
+    <nav>
+      <h1>Fun Bus</h1>
+      <div class="links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      </div>
+    </nav>
+ 
      
   <div class="container home">
+
+    <header>
+      <img src="img/fun-bus.jpg" alt="Toy bus in the sand">
+      <div class="headerText">
+      <h2>Welcome To Fun Bus! </h2>
+      <p>Traveling expedition moder, clean webdesign blogger clean website theme websit modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun treveler pretty design website expedition.</p>
+      </div>
+    </header>
    
     <section class="content-section">
       <div class="text-content">
@@ -64,6 +80,54 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+    <br>
+    <br>
+    <section class="content-destination">
+      <h2>Your Vacation Awaits!</h2>
+      <p>Choose your desired vacation package and any specific details and we will get back to you after a couple margaritas!</p>
+    </section>
+      <form action="action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="australia">Amazing Vacation</option>
+              <option value="canada">Amazing Vacation 2.0</option>
+              <option value="usa">Not as Amazing Vacation</option>
+              <option value="usa">An Okay, but not great Vacation</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Anything you'd like us to know? Write it here!" style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
   </div><!-- container -->
 
   <footer class="footer">
