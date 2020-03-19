@@ -217,12 +217,6 @@ nav .links a {
     margin: 5%;
   }
 }
-.home {
-  /* Style the container */
-  /* Floating column for labels: 25% width */
-  /* Floating column for inputs: 75% width */
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-}
 .home .headerText {
   margin: 3% 0;
   padding-bottom: 1%;
