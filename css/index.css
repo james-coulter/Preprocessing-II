@@ -217,6 +217,12 @@ nav .links a {
     margin: 5%;
   }
 }
+.home {
+  /* Style the container */
+  /* Floating column for labels: 25% width */
+  /* Floating column for inputs: 75% width */
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+}
 .home .headerText {
   margin: 3% 0;
   padding-bottom: 1%;
@@ -302,6 +308,10 @@ nav .links a {
   font-size: 1.5rem;
   border-radius: 12px;
 }
+.home .content-pick .destination .btn:hover {
+  background: orange;
+  transform: rotate(-10deg);
+}
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
@@ -319,5 +329,73 @@ nav .links a {
     flex-wrap: wrap;
     flex-direction: column;
     margin: 4%;
+  }
+}
+.home input[type=text],
+.home select,
+.home textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #4682B4;
+  border-radius: 8px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.home label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: #4682B4;
+  font-size: 1.5rem;
+}
+.home .row {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+.home .row input[type=submit] {
+  background-color: #4682B4;
+  border: none;
+  color: white;
+  padding: 15px 28%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 12px 20px;
+}
+.home .row input[type=submit]:hover {
+  background: orange;
+  transform: rotate(-10deg);
+}
+.home .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.home .col-25 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+.home .col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.home .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .home .col-25,
+  .home .col-75,
+  .home input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 }
